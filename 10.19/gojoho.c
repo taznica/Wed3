@@ -2,8 +2,18 @@
 
 int count = 0;
 
+void sort(int x, int y){
+    int p = 0;
+    if(x < y){
+        p = x;
+        x = y;
+        y = p;
+    }
+}
+
 int gojoho(int x, int y){
     int p = 0;
+    sort(x, y);
     while(y != 0){
         p = x;
         x = y;
