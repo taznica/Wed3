@@ -10,6 +10,7 @@ void sort(int x, int y){
         y = p;
     }
 }
+
 int sirami(int x, int y){
     sort(x, y);
     int z = y;
