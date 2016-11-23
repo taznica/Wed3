@@ -31,7 +31,6 @@ struct cell *pop(struct cell *top) {
         puts("Error: Empty stack.");
         exit(1);
     }
-    return;
 }
 
 int main() {
