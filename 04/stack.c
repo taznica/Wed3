@@ -5,7 +5,7 @@ struct cell {
     struct cell *next;
 }
 
-struct cell *push(int x, struct cell *pop) {
+struct cell *push(int x, struct cell *top) {
     struct cell *old, *new;
     new = (struct cell *)malloc(sizeof(struct cell));
 
@@ -15,7 +15,7 @@ struct cell *push(int x, struct cell *pop) {
     new->element = x;
     new->next = old;
 
-    return(top); 
+    return(top);
 }
 
 struct cell *pop(struct cell *top) {
